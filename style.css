@@ -239,7 +239,7 @@ nav ul li:hover::after {
     #hero-paragraph {
         width: 95%;
         font-size: 1rem;
-        line-height: 15px;
+        line-height: 20px;
         padding: 5px 0px;
         font-family: var(--paragraph-font);
         letter-spacing: 0px;
@@ -247,7 +247,7 @@ nav ul li:hover::after {
     }
 
     .hero-skills h2 {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0;
         color: #131212;
     }
