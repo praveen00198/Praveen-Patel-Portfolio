@@ -184,16 +184,13 @@ nav ul li:hover::after {
 @media (max-width: 768px) {
     #fade-heading {
         font-size: 5.5rem;
-        margin-top: -10rem;
     }
 
     #fade-subheading {
         font-size: 0.8rem;
-        margin-top: -10px;
     }
 
     .for-scroll-down {
-        margin-top: -8rem;
         animation: bounce 2s ease infinite;
     }
 
