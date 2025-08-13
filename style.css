@@ -183,12 +183,18 @@ nav ul li:hover::after {
 
 @media (max-width: 768px) {
     #fade-heading {
-        font-size: 5rem;
+        font-size: 5.5rem;
+        margin-top: -4rem;
     }
 
     #fade-subheading {
         font-size: 0.8rem;
-        padding: 5px 0px;
+        margin-top: -10px;
+    }
+
+    .for-scroll-down {
+        margin-top: -6rem;
+        animation: bounce 2s ease infinite;
     }
 
     .nav-list {
@@ -215,7 +221,7 @@ nav ul li:hover::after {
 
     #hero {
         background-color: #60616034;
-        padding: 30px 0px;
+        padding: 30px 5px;
         text-align: center;
     }
 
