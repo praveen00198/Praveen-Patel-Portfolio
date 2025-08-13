@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praveen Patel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+  </head>
+  <body>
+    <main data-scroll-container>
+      <section 
+        class="front-view w-full h-screen flex flex-col justify-center items-center relative" 
+        data-scroll-section
+      >
+        <h1 
+          id="fade-heading" 
+          class="text-9xl text-[#606d5d]">
+          Praveen
+        </h1>
+        <p 
+          id="fade-subheading" 
+          class="py-4 text-lg text-[#606d5d]">
+          Yuppppp! It's me, your tech solution 😉
+        </p>
+
+        <div  
+          class="for-scroll-down text-center leading-none absolute bottom-8 text-gray-400" 
+          data-scroll
+        >
+          <i 
+            class="ri-arrow-down-circle-line">
+          </i>
+          <p 
+            class="text-lg font-medium">
+            Scroll Down
+          </p>
+        </div>
+
+      </section>
+
+      <nav class="flex justify-between items-center relative" data-scroll-section>
+        <ul
+          class="nav-list flex justify-between items-center gap-10"
+          data-scroll
+          data-scrol-speed="2"
+        >
+          <li 
+            class="nav-item text-lg font-medium">
+            <a href="#">About</a>
+          </li>
+
+          <li 
+            class="nav-item text-lg font-medium">
+            <a href="#">Work</a>
+          </li>
+
+          <li 
+            class="nav-item text-lg font-medium">
+            <a href="#">Service</a>
+          </li>
+        </ul>
+
+        <h1 
+          class="nav-text font-medium">
+          Praveen
+        </h1>
+
+        <a
+          href="#"
+          class="nav-connect font-medium text-lg bg-indigo-300 py-1 px-4 rounded-full text-cyan-950"
+          >Let's Connect
+        </a
+        >
+
+        <i class="ri-menu-line" onclick="toggleMenu()"></i>
+      </nav>
+
+      <section 
+        id="hero" 
+        class="w-full h-screen" 
+        data-scroll-section
+      >
+        <div 
+          class="hero-div flex justify-center">
+          <div>
+
+            <h2 
+              id="hero-text" 
+              class="" 
+              data-scroll>
+                hello there! I'm
+            </h2>
+
+            <h1 
+              id="hero-name" 
+              class="font-medium text-slate-800" 
+              data-scroll>
+                Praveen Patel
+            </h1>
+
+            <h4 
+              id="hero-paragraph" 
+              data-scroll>
+              — a passionate designer and developer who loves transforming ideas
+              into visually stunning, interactive, and responsive web
+              experiences, brought to life with clean, maintainable code.
+            </h4>
+
+            <div class="hero-skills w-full flex justify-between items-center mt-4 py-6" data-scroll>
+              <h2 class="skill text-2xl leading-none p-4 text-slate-800" data-scroll>Frontend Developer</h2>
+              <!-- <hr class="w-1 h-8 bg-slate-300"> -->
+              <h2 class="skill text-2xl leading-none p-4 text-slate-800" data-scroll>UI/UX Designer</h2>
+              <!-- <hr class="w-1 h-8 bg-slate-300"> -->
+              <h2 class="skill text-2xl leading-none p-4 text-slate-800" data-scroll>Graphic Designer</h2>
+              <!-- <hr class="w-1 h-8 bg-slate-300"> -->
+              <h2 class="skill text-2xl leading-none p-4 text-slate-800" data-scroll>Java Developer</h2>
+            </div>
+
+
+          </div>
+
+          <div 
+            class="w-full relative"
+          >
+            <div 
+              class="social flex flex-col gap-3 p-4"
+            >
+              <h2 class="social-h2">Connet with me</h2>
+              <a 
+                class="social-apps flex items-center gap-3 px-1 py-2" 
+                href="mailto:praveenpatel5957@gmail.com" 
+                target="_blank"
+                rel="noopener noreferrer">
+                  <i class="ri-mail-fill"></i>
+                  <span class="text-lg">Email</span>
+              </a>
+
+              <a 
+                class="social-apps flex items-center gap-3 px-1 py-2" 
+                href="https://www.linkedin.com/in/praveen-patel-webdev/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <i class="ri-linkedin-fill"></i>
+                  <span class="text-lg">LinkedIn</span>
+              </a>
+
+              <a 
+                class="social-apps flex items-center gap-3 px-1 py-2" 
+                href="https://github.com/praveen00198" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <i class="ri-github-fill"></i>
+                  <span class="text-lg">GitHub</span>
+              </a>
+
+              <a 
+                class="social-apps flex items-center gap-3 px-1 py-2" 
+                href="http://#" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  <i class="ri-instagram-fill"></i>
+                  <span class="text-lg">Instagram</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="w-full h-screen" data-scroll-section>
+        <h1>Hey</h1>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="/assets/javascript/gsap-locomotive.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

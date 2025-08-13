@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('/assets/fonts/Karla/Karla-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('/assets/fonts/Sacramento/Sacramento-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url('/assets/fonts/Instrument_Serif/InstrumentSerif-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Instrument Sans';
+    src: url('/assets/fonts/Instrument_Sans/InstrumentSans-Italic-VariableFont_wdth\,wght.ttf');
+    font-style: normal;
+}
+
+:root {
+    --title: 'Instrument Serif';
+    --sub-title: 'Instrument Sans';
+    --paragraph-font: 'Karla';
+    --handwritting: 'Sacramento';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: var(--paragraph-font);
+    background-color: #f8f3ce;
+}
+
+[data-scroll-container] {
+    min-height: 100%;
+}
+
+
+nav {
+    width: 100%;
+    padding: 0.5rem 3rem;
+}
+
+nav h1 {
+    font-size: 3rem;
+    font-family: var(--handwritting);
+    color: #283624;
+}
+
+nav ul li {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(2, 32, 32);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all linear 0.4s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.ri-menu-line {
+    display: none;
+}
+
+#fade-heading {
+    font-family: var(--title);
+}
+
+.for-scroll-down {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#hero {
+    height: 100vh;
+    position: relative;
+    padding: 3rem;
+    border-radius: 20px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+#hero-text {
+    font-size: 1.5rem;
+    font-family: var(--sub-title);
+    color: #606160;
+}
+
+#hero-name {
+    font-size: 8rem;
+    font-family: var(--title);
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+#hero-paragraph {
+    width: 90%;
+    font-family: var(--sub-title);
+    color: #606160;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-skills h2 {
+    font-family: var(--title);
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.hero-skills h2:hover {
+    animation: bounce 2s ease forwards;
+    color: #3a3a3a;
+}
+
+.social {
+    width: 55%;
+    position: absolute;
+    top: 6rem;
+    right: 0rem;
+}
+
+.social h2 {
+    font-size: 2rem;
+    font-family: var(--title);
+    letter-spacing: 1px;
+    color: #283624;
+}
+
+.social a {
+    width: 100%;
+    color: #283624;
+    border-bottom: 2px solid #283624;
+    transition: 0.2 ease-in;
+}
+
+.social a span {
+    text-align: right;
+}
+
+.social a:hover {
+    background-color: #28362421;
+    letter-spacing: 1px;
+    font-family: var(--title);
+}
+
+
+
+
+@media (max-width: 768px) {
+    #fade-heading {
+        font-size: 5rem;
+    }
+
+    #fade-subheading {
+        font-size: 0.8rem;
+        padding: 5px 0px;
+    }
+
+    .nav-list {
+        display: none !important;
+    }
+
+    nav {
+        padding: 0px 5px;
+    }
+
+    nav h1 {
+        font-size: 2.2rem;
+    }
+
+    .nav-connect {
+        display: none;
+        font-size: 16px;
+    }
+
+    .ri-menu-line {
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    #hero {
+        background-color: #60616034;
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .hero-div {
+        flex-direction: column;
+    }
+
+    #hero-text {
+        font-size: 1.2rem;
+        font-family: var(--paragraph-font);
+        color: #3a3a3a;
+    }
+
+    #hero-name {
+        font-size: 4.5rem;
+        font-style: normal;
+        color: #1a1d19;
+        padding: 10px 0px;
+    }
+
+    #hero-paragraph {
+        width: 95%;
+        font-size: 1rem;
+        line-height: 15px;
+        padding: 5px 0px;
+        font-family: var(--paragraph-font);
+        letter-spacing: 0px;
+        color: #3a3a3a;
+    }
+
+    .hero-skills h2 {
+        font-size: 16px;
+        padding: 0;
+        color: #131212;
+    }
+
+    .social {
+        width: 90%;
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+        padding: 0% 5%;
+    }
+
+}
