@@ -54,7 +54,6 @@ nav {
     padding: 0.5rem 3rem;
 }
 
-
 nav h1 {
     font-size: 3rem;
     font-family: var(--handwritting);
@@ -182,6 +181,12 @@ nav ul li:hover::after {
 
 
 
+
+
+
+
+
+
 @media (max-width: 768px) {
     #fade-heading {
         font-size: 5.5rem;
@@ -264,4 +269,6 @@ nav ul li:hover::after {
         padding: 0% 5%;
     }
 
+
+    
 }

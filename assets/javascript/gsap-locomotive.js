@@ -85,7 +85,7 @@ gsap.from(".social-h2, .social-apps", {
   }
 });
 
-gsap.from(".skill", {
+gsap.from(".skill, .card", {
   y: -50,
   opacity: 0,
   duration: 0.5,
@@ -98,6 +98,33 @@ gsap.from(".skill", {
     toggleActions: "play none none reverse"
   }
 });
+
+// gsap.utils.toArray(".card").forEach((card, i) => {
+//   gsap.to(card, {
+//     y: i % 2 === 0 ? 10 : -10,
+//     x: i % 2 === 0 ? 10 : -10, 
+//     ease: "none",
+//     yoyo: true, 
+//     repeat: -2, 
+//     duration: 3 + Math.random() * 2 
+//   });
+// });
+
+gsap.from(".skill-title, .skill-text", {
+  x: -50,
+  opacity: 0,
+  duration: 0.5,
+  stagger: 0.15,
+  scrollTrigger: {
+    trigger: "#skills-section",
+    scroller: "[data-scroll-container]",
+    start: "top center",
+    end: "bottom top", 
+    toggleActions: "play none none reverse"
+  }
+});
+
+
 
 
 
